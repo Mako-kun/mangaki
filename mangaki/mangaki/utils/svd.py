@@ -136,9 +136,3 @@ class MangakiSVD(object):
             print(line)"""
 
         self.chrono.save('complete')
-
-    def __str__(self):
-        return '[SVD]'
-
-    def get_shortname(self):
-        return 'svd'

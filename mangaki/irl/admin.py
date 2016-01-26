@@ -1,5 +1,5 @@
 from django.contrib import admin
-from irl.models import Location, Event, Partner
+from irl.models import Location, Event
 
 
 class EventAdmin(admin.ModelAdmin):
@@ -7,9 +7,5 @@ class EventAdmin(admin.ModelAdmin):
     raw_id_fields = ['anime']
 
 
-class PartnerAdmin(admin.ModelAdmin):
-    list_display = ['name', 'url', 'image']
-
 admin.site.register(Location)
 admin.site.register(Event, EventAdmin)
-admin.site.register(Partner, PartnerAdmin)
